@@ -1,5 +1,40 @@
 # Changelog
 
+## [0.18.0](https://github.com/useplunk/plunk/compare/v0.17.0...v0.18.0) (2026-10-25)
+
+
+### Features
+
+* Add throttle for transactional emails and workflows ([f228961](https://github.com/useplunk/plunk/commit/f228961320d802ef20cd6eb101cd6891b9eaca04))
+* **api:** let headless senders point List-Unsubscribe at their own one-click link ([50be3c9](https://github.com/useplunk/plunk/commit/50be3c9fa322511519301ce1965c079faf9fbcb1))
+* let headless senders point List-Unsubscribe at their own one-click link ([d5c5f89](https://github.com/useplunk/plunk/commit/d5c5f8905133c54e8ad8ddb79eef6f937e117e8d))
+* Verify SES configuration sets on startup ([2f3cb50](https://github.com/useplunk/plunk/commit/2f3cb509080b98e34165fb7f49895a0ab97283b5))
+
+
+### Bug Fixes
+
+* **api:** honour data-plunk-one-click for headless sends only ([6f9cebf](https://github.com/useplunk/plunk/commit/6f9cebf0a6cc5477f5534a8f75761cca2c1d0486))
+* Cancel workflow executions and scheduled campaigns when a project is disabled ([cf2d384](https://github.com/useplunk/plunk/commit/cf2d3844d9b90ab94681b53399580d09cc1f5c12))
+* Correctly end job if last step of workflow is delay ([18f18c1](https://github.com/useplunk/plunk/commit/18f18c11cbef8ba37f329af63359cbc8a17771ec))
+* **landing:** Remove inbound attachment and threading claims ([beac2e3](https://github.com/useplunk/plunk/commit/beac2e3bba4c3bd50d7f7e1392516058e225a6f2))
+* Only accept SNS messages from topics in our own AWS account ([4c84f64](https://github.com/useplunk/plunk/commit/4c84f64b4ee4fd6fd99ba2f9946504b53df75ec3))
+* **webhooks:** ignore opens SES marks as automated ([3c1af34](https://github.com/useplunk/plunk/commit/3c1af34b614da4a1e0aebf014e8f0ebddbbd51b0))
+* **webhooks:** ignore opens SES marks as automated ([032b868](https://github.com/useplunk/plunk/commit/032b868cf738005a0e3ddc9a541edcdd00d8970f)), closes [#531](https://github.com/useplunk/plunk/issues/531)
+* **workflows:** keep cancelled executions from resuming ([189b907](https://github.com/useplunk/plunk/commit/189b9070577f8202db010d66dc467c0d7043c2b8))
+* **workflows:** keep cancelled executions from resuming ([7792d6b](https://github.com/useplunk/plunk/commit/7792d6b28e4bb3702cb393f6dc66fb1f1ff70ff6))
+* **workflows:** treat a zero wait timeout as no limit ([0ab8bf9](https://github.com/useplunk/plunk/commit/0ab8bf94f300f3bb82eedb44b545588beb288bcd))
+* **workflows:** treat a zero wait timeout as no limit ([006cc4c](https://github.com/useplunk/plunk/commit/006cc4c7c8f0015105a89303b9a3cc5784ab7073))
+
+
+### Documentation
+
+* Add open tracking and workflow improvements to the changelog ([1fe84b5](https://github.com/useplunk/plunk/commit/1fe84b5b23eac5b7dd426fdd87ace0a2b1c1813f))
+* document data-plunk-one-click for sender-hosted one-click unsubscribe ([77e85b8](https://github.com/useplunk/plunk/commit/77e85b8e3db6b03f1e68e88709c1c859ab806078))
+* **tracking:** explain how automatic opens are left out ([9805c18](https://github.com/useplunk/plunk/commit/9805c188ec4e9ffc44918cb1052dc0c754b74796)), closes [#531](https://github.com/useplunk/plunk/issues/531)
+* **workflows:** say what cancelling an execution stops ([cf264fa](https://github.com/useplunk/plunk/commit/cf264fa4b1f5d0fba977da44827c0daf8d1afec1))
+* **workflows:** suggest the email event names workflows receive ([bf6a6ef](https://github.com/useplunk/plunk/commit/bf6a6ef705673d80d8a07b644ab4267098ac7eb8))
+* **workflows:** suggest the email event names workflows receive ([2eac0dd](https://github.com/useplunk/plunk/commit/2eac0dd1ab99eb98a0ae47bc1bd9fdd52da56a47))
+
 ## [0.17.0](https://github.com/useplunk/plunk/compare/v0.16.0...v0.17.0) (2026-10-21)
 
 
